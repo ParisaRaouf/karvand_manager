@@ -1,0 +1,111 @@
+{
+    "Bootcamp": {
+        "title": "karvand Python",
+        "year": 2026
+    },
+    "karvands": [
+        {
+            "id": 1,
+            "full_name": "Parisa Raouf",
+            "email": "parisa.raouf1996@gmail.com",
+            "city": "Rasht",
+            "education": {
+                "degree": "Master's degree",
+                "field": "Biomedical Engineering"
+            },
+            "skills": [
+                {
+                    "name": "Matlab",
+                    "level": "intermediate",
+                    "score": 70.0
+                },
+                {
+                    "name": "machine learning",
+                    "level": "intermidiate",
+                    "score": 55.0
+                },
+                {
+                    "name": "python",
+                    "level": "biginner",
+                    "score": 40.0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "full_name": "Abbas Bagheri",
+            "email": "abbas.ba1374@yahoo.com",
+            "city": "Qaemshahr",
+            "education": {
+                "degree": "Master's Degree",
+                "field": "Mechanical Engineering"
+            },
+            "skills": [
+                {
+                    "name": "Catia",
+                    "level": "advance",
+                    "score": 90.0
+                },
+                {
+                    "name": "otocad",
+                    "level": "intermidiate",
+                    "score": 70.0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "full_name": "Nazanin Ahmadi",
+            "email": "Naz.Ahmadi@gmail.com",
+            "city": "Rohld Island",
+            "education": {
+                "degree": "PhD",
+                "field": "Mathematic"
+            },
+            "skills": [
+                {
+                    "name": "Deep Learning",
+                    "level": "advance",
+                    "score": 85.0
+                },
+                {
+                    "name": "Physics-informed neural networks",
+                    "level": "advance",
+                    "score": 95.0
+                },
+                {
+                    "name": "python",
+                    "level": "advance",
+                    "score": 96.0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "full_name": "Sepide Baghernezhad",
+            "email": "sepide.baghernezhad@gmail.com",
+            "city": "Tehran",
+            "education": {
+                "degree": "Phd",
+                "field": "Biomedical Engineering"
+            },
+            "skills": [
+                {
+                    "name": "Matlab",
+                    "level": "advance",
+                    "score": 78.0
+                },
+                {
+                    "name": "EEG lab",
+                    "level": "intermidiate",
+                    "score": 55.0
+                },
+                {
+                    "name": "fsl preprocessing toolbox",
+                    "level": "advance",
+                    "score": 80.0
+                }
+            ]
+        }
+    ]
+}
