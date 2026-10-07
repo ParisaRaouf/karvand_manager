@@ -1,0 +1,24 @@
+{
+    "total_karvands": 6,
+    "total_skills": 13,
+    "average_skill_score": 77.84615384615384,
+    "cities": [
+        "rasht",
+        "qaemshahr",
+        "rohld island",
+        "tehran",
+        "mashhad"
+    ],
+    "unique_skills": [
+        "matlab",
+        "machine learning",
+        "python",
+        "catia",
+        "otocad",
+        "deep learning",
+        "physics-informed neural networks",
+        "eeg lab",
+        "fsl preprocessing toolbox",
+        "cooking"
+    ]
+}
