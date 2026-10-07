@@ -1,7 +1,7 @@
 # Karvand_manager menue
 import json
 import os
-path='data/karvans.json'
+path='data/karvands.json'
 # Function for load json file and read it
 def load_data():
     # creat data folder
@@ -104,7 +104,7 @@ def karvands_info():
             print("____________________\n")
         print("_______________________________________\n")
 
-def edit_info():
+def edit_information():
     data=load_data()
     which_id=int(input("Do you want to change which id?\n"))
     all_id=[]
@@ -192,7 +192,7 @@ while True:
     elif user_choice=="2":
         karvands_info()
     elif user_choice=="3":
-        edit_info()
+        edit_information()
     elif user_choice=="4":
         user_id=int(input("Enter the id you want to delet.\n"))
         delet_function(user_id)
