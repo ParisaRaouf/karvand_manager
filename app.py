@@ -206,7 +206,7 @@ def edit_information():
             print("The information was updated!")
             return
 
-def delet_function(id):
+def delete_function(id):
     data=load_data()
     max_id=0
     for karvand in data["karvands"]:
@@ -296,7 +296,7 @@ while True:
         edit_information()
     elif user_choice=="6":
         user_id=int(input("Enter the id you want to delet.\n"))
-        delet_function(user_id)
+        delete_function(user_id)
     elif user_choice=="7":
         general_report()
     elif user_choice=="8":
