@@ -103,27 +103,6 @@ def karvands_info():
             print("score:" , skill['score'])
             print("____________________\n")
         print("_______________________________________\n")
-def karvand_search(id):
-    data=load_data()
-    max_id=0
-    for karvand in data["karvands"]:
-        if karvand["id"]>max_id:
-            max_id=karvand["id"]
-        if id>max_id:
-            print(f"There is no karvand with this id: {id}")
-        if karvand["id"]==id:
-            print("Karvand's information:")
-            print("Karvand's name:", karvand["full_name"])
-            print("Email address:", karvand["email"])
-            print("City:", karvand["city"])
-            print("Degree of education:", karvand["education"]["degree"])
-            print("Field of study:", karvand["education"]["field"])
-            print("Skills:")
-            for skill in karvand["skills"]:
-                print("Skill name:" , skill['name'])
-                print("Level:" , skill['level'])
-                print("score:" , skill['score'])
-                print("____________________\n")
 
 def search_name_skill(skill):
     data=load_data()
@@ -269,7 +248,29 @@ def general_report():
           f"cities:{all_city}\n",
           f"unique_skills:{skills_without_repetation}")
         
-
+def search_karvand_by_id(id):
+    data=load_data()
+    max_id=0
+    for karvand in data["karvands"]:
+        if karvand["id"]>max_id:
+            max_id=karvand["id"]
+    if id>max_id:
+        print(f"There is no karvand with this id: {id}")
+    for karvand in data["karvands"]:
+        if karvand["id"]==id:
+            print("Karvand's information:")
+            print("Karvand's name:", karvand["full_name"])
+            print("Email address:", karvand["email"])
+            print("City:", karvand["city"])
+            print("Degree of education:", karvand["education"]["degree"])
+            print("Field of study:", karvand["education"]["field"])
+            print("Skills:")
+            for skill in karvand["skills"]:
+                print("Skill name:" , skill['name'])
+                print("Level:" , skill['level'])
+                print("score:" , skill['score'])
+                print("____________________\n")
+    
 
 
 while True:
@@ -288,7 +289,7 @@ while True:
         karvands_info()
     elif user_choice=="3":
         ind=int(input("Enter the id that you want to search"))
-        karvand_search(ind)
+        search_karvand_by_id(ind)
     elif user_choice=="4":
         user_skill=input("Enter the skill name to see who has it!").lower()
         search_name_skill(user_skill)
