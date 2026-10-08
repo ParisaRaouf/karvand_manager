@@ -305,6 +305,7 @@ while True:
     else:
         print("Invalid input!")
     
-
+with open(".gitignore", "w") as file:
+    file.write("debug.log")
     
         
